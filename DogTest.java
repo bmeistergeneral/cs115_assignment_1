@@ -13,6 +13,8 @@ public class DogTest
         System.out.println(dog2.getName() + " says " + dog2.speak());
         Yorkshire dog3 = new Yorkshire("Yorkie");
         System.out.println(dog3.getName() + " says " + dog3.speak());
+        System.out.println("The average breed weight for a Labrador is " + Labrador.avgBreedWeight());
+        System.out.println("The average breed weight for a Yorkshire is " + Yorkshire.avgBreedWeight());
     }
 }
 

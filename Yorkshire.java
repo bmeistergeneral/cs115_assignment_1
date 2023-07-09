@@ -6,6 +6,7 @@
 // *****************************************************************
 public class Yorkshire extends Dog
 {
+    private static int breedWeight = 80;
     public Yorkshire(String name)
     {
         super(name);
@@ -16,5 +17,9 @@ public class Yorkshire extends Dog
     public String speak()
     {
         return "woof";
+    }
+    public static int avgBreedWeight()
+    {
+        return breedWeight;
     }
 }
