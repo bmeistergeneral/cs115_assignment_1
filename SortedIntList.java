@@ -24,7 +24,7 @@ public class SortedIntList extends IntList {
                 }
             }
 
-            // Checks to see if the integer values go before the end or at the end of the array.
+            // Checks to see if the new value should go before the end, or at the end of the array.
             if (insertLocation < numElements) {
                 // Moves the other values out of the way of where the new value will go.
                 for (int i = numElements; i > insertLocation; i--) {
@@ -34,6 +34,7 @@ public class SortedIntList extends IntList {
                 list[insertLocation] = value;
                 numElements++;
             } else {
+                // Puts value at end of array just like IntList did
                 list[numElements] = value;
                 numElements++;
             }
