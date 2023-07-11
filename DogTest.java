@@ -7,8 +7,6 @@ public class DogTest
 {
     public static void main(String[] args)
     {
-        Dog dog = new Dog("Spike");
-        System.out.println(dog.getName() + " says " + dog.speak());
         Labrador dog2 = new Labrador("Labby", "yellow");
         System.out.println(dog2.getName() + " says " + dog2.speak());
         Yorkshire dog3 = new Yorkshire("Yorkie");
