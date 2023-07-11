@@ -15,17 +15,22 @@ public class SortedIntList extends IntList {
         } else {
             int insertLocation = numElements; // by default at the end
 
+            // Iterates through the array to check if new value is less than the values in the array.
             for (int i = 0; i < numElements; i++) {
+                // Tries to find a better location for the new value.
                 if (value <= list[i]) {
                     insertLocation = i;
                     break;
                 }
             }
 
+            // Checks to see if the integer values go before the end or at the end of the array.
             if (insertLocation < numElements) {
+                // Moves the other values out of the way of where the new value will go.
                 for (int i = numElements; i > insertLocation; i--) {
                    list[i] = list[i - 1];
                 }
+                // Places new value in new location.
                 list[insertLocation] = value;
                 numElements++;
             } else {

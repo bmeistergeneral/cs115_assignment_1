@@ -1,7 +1,8 @@
 // ***************************************************************
 // ListTest.java
 //
-// A simple test program that creates an IntList, puts some // ints in it, and prints the list.
+// A simple test program that creates an IntList, puts some
+// ints in it, and prints the list.
 //
 // ***************************************************************
 public class ListTest
